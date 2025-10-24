@@ -1,0 +1,11 @@
+{
+  "type": "record",
+  "namespace": "com.example.movies.avroDto",
+  "name": "MovieKafkaDto",
+  "fields": [
+    { "name": "id", "type": "long" },
+    { "name": "movieId", "type": "string" },
+    { "name": "movieName", "type": "string" },
+    { "name": "description", "type": ["null", "string"], "default": null }
+  ]
+}
